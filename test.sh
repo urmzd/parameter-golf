@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+ITERATIONS=50
+VAL_LOSS_EVERY=0
+TRAIN_BATCH_TOKENS=8192
+VAL_BATCH_SIZE=524288
+WARMUP_STEPS=5
+NUM_HEADS=2
+NUM_KV_HEADS=1
+RUN_ID=smoke_2heads
+
+python "train_register_lm.py"
